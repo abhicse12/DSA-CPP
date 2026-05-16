@@ -9,7 +9,6 @@ public:
     Graph(int V){
         this->V=V;
         l = new list<int> [V];
-
     }
 void addEdges(int u,int v){
     l[u].push_back(v);
@@ -24,11 +23,7 @@ void printAdjList(){
         cout<<endl;
     }
 }
-
 };
-
-
-
 int main(){
     Graph g(5);
     g.addEdges(0,1);
